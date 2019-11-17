@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="startSceneSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16e5e74b725" ></w:Config>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xfbe2ff" locked="true"/>
+	<e:Button id="joinBtn" label="加入指定房间" x="363.67" y="838" anchorOffsetX="0" width="160"/>
+	<e:Button id="randomBtn" label="随机加入" x="77.27" y="838" anchorOffsetX="0" width="155"/>
+	<e:Image id="userAvatar" width="90" height="90" x="32.27" y="30.7" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Label id="userId" text="id" x="139" y="42.7" anchorOffsetX="0" width="304.67" textColor="0xf2ac9c" size="25"/>
+	<e:Label id="userName" text="用户名" x="139" y="83.68" anchorOffsetX="0" width="304.67" fontFamily="Microsoft YaHei" textColor="0xf2ac9c" size="25"/>
+	<e:Label id="logText" text="" x="29.44" y="152.79" textColor="0xf7517c" size="22" anchorOffsetX="0" width="581.12" anchorOffsetY="0" height="665" locked="true"/>
+	<e:Group id="joinRoom" width="362" height="263" x="133" y="253" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<e:Rect fillColor="0xfcb5db" left="0" right="0" top="0" bottom="0"/>
+		<e:Label text="请输入房间号：" x="34" y="49.5" fontFamily="Microsoft YaHei" size="25"/>
+		<e:TextInput id="joinId" width="282" height="58" anchorOffsetX="0" anchorOffsetY="0" x="40" y="91" inputType="string"/>
+		<e:Button id="joinRoomBtn" label="加入" x="121.5" y="196" anchorOffsetY="0" height="38"/>
+	</e:Group>
+</e:Skin>
