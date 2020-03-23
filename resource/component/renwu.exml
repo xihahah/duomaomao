@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="renwuSkin" width="246" height="62" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="170e2ee4757" ></w:Config>
+	<e:Group width="58" height="49" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" name="no" source="tubiao_json.renh"/>
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" name="ok" source="tubiao_json.ren" visible="false"/>
+	</e:Group>
+	<e:Group width="58" height="49" x="56" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" name="no" source="tubiao_json.renh"/>
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" name="ok" source="tubiao_json.ren" visible="false"/>
+	</e:Group>
+	<e:Group width="58" height="49" x="112" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" name="no" source="tubiao_json.renh"/>
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" name="ok" source="tubiao_json.ren" visible="false"/>
+	</e:Group>
+	<e:Group width="58" height="49" x="168" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" name="no" source="tubiao_json.renh"/>
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" name="ok" source="tubiao_json.ren" visible="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,47 +1,82 @@
 {
-    "16e5e74b725": {
-        "path": "scene\\startScene.ts",
-        "class": "startScene",
-        "parentPath": ""
-    },
-    "16e93f40e2f": {
-        "path": "scene\\gameScene.ts",
-        "class": "gameScene",
-        "parentPath": "",
-        "backgroundX": 0,
-        "backgroundY": 0,
-        "backgroundWidth": -1,
-        "backgroundHeight": -1,
-        "useBgImage": true,
-        "useBgColor": true,
-        "backgroundAlpha": 100
-    },
-    "16eab9de58e": {
-        "path": "component\\player.ts",
-        "class": "player",
-        "parentPath": ""
-    },
-    "global": {
-        "globalAutoLayerMarkEnable": false
-    },
-    "16f7f407a9c": {
-        "path": "..\\resource\\component\\Camera.ts",
-        "class": "Camera",
-        "parentPath": ""
-    },
-    "16f7f644996": {
-        "path": "component\\Camera.ts",
-        "class": "Camera",
-        "parentPath": ""
-    },
-    "16fd0da3614": {
-        "path": "component\\Controler.ts",
-        "class": "Controler",
-        "parentPath": ""
-    },
-    "170053112df": {
-        "path": "component\\controlScene.ts",
-        "class": "controlScene",
-        "parentPath": ""
-    }
+  "16e5e74b725": {
+    "path": "scene\\startScene.ts",
+    "class": "startScene",
+    "parentPath": ""
+  },
+  "16e93f40e2f": {
+    "path": "scene\\gameScene.ts",
+    "class": "gameScene",
+    "parentPath": "",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100,
+    "bindingDataTestObj": [],
+    "guideLinesEnabled": false
+  },
+  "16eab9de58e": {
+    "path": "component\\player.ts",
+    "class": "player",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": false,
+    "globalBindingDataTestObj": [],
+    "gridColor": 16383879,
+    "gridEnabled": false,
+    "gridSize": 20
+  },
+  "16f7f407a9c": {
+    "path": "..\\resource\\component\\Camera.ts",
+    "class": "Camera",
+    "parentPath": ""
+  },
+  "16f7f644996": {
+    "path": "component\\Camera.ts",
+    "class": "Camera",
+    "parentPath": ""
+  },
+  "16fd0da3614": {
+    "path": "component\\Controler.ts",
+    "class": "Controler",
+    "parentPath": ""
+  },
+  "170053112df": {
+    "path": "component\\controlScene.ts",
+    "class": "controlScene",
+    "parentPath": ""
+  },
+  "16fc2447ed3": {
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100
+  },
+  "170c489465b": {
+    "path": "scene\\mainScene.ts",
+    "class": "mainScene",
+    "parentPath": ""
+  },
+  "170cdbe848e": {
+    "path": "scene\\matchScene.ts",
+    "class": "matchScene",
+    "parentPath": ""
+  },
+  "170d7a4fbfa": {
+    "path": "component\\Timer.ts",
+    "class": "Timer",
+    "parentPath": ""
+  },
+  "170ddf815c8": {
+    "path": "component\\Sticker.ts",
+    "class": "Sticker",
+    "parentPath": ""
+  }
 }

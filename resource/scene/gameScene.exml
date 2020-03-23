@@ -1,4 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="gameSceneSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="16e93f40e2f" ></w:Config>
+	<e:Group id="controlGroup" anchorOffsetX="0" anchorOffsetY="0" zIndex="1" left="0" right="0" top="0" bottom="0">
+		<e:Button id="leftBtn" label="" x="27.66" y="507.33" width="120" height="120">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="tubiao_json.left" source.down="tubiao_json.left_hover"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="rightBtn" label="" x="158.66" y="507.33" width="120" height="120">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="tubiao_json.right" source.down="tubiao_json.right_hover"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="attackBtn" label="" x="734.66" y="492.33" width="120" height="120" anchorOffsetX="0" anchorOffsetY="0" alpha="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="tubiao_json.attack" source.down="tubiao_json.attack_hover"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="carryBtn" label="" x="838.66" y="361.33" width="100" height="100" anchorOffsetX="0" anchorOffsetY="0" alpha="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="tubiao_json.carry" source.down="tubiao_json.carry_hover"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="upBtn" label="" x="918" y="461.33" width="150" height="150">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="tubiao_json.jump" source.down="tubiao_json.jump_hover"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<ns1:Timer id="timer" width="373" height="79" x="381.5" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		<ns1:renwu id="rwTip" width="231" height="43" x="498" y="17" anchorOffsetX="0" anchorOffsetY="0"/>
+		<ns1:miniPlayer id="mpTip" width="192" height="66" x="944" y="7" anchorOffsetX="0" anchorOffsetY="0"/>
+		<ns1:Score id="scoreTip" width="84" height="97" x="8.66" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
 </e:Skin>

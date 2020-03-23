@@ -1,6 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="scene1Skin" width="4000" height="1700" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16fc2447ed3" ></w:Config>
-	<e:Image id="bg1" source="bgimage_jpg" fillMode="clip" name="bgImage" width="4000" x="0" height="1700" y="0"/>
-	<e:Rect id="testBox" width="422" height="664.67" x="110.67" y="983.33" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+	<e:Group id="bg" left="0" right="0" top="0" bottom="0">
+		<e:Image fillMode="clip" name="bg" width="4000" x="0" height="1700" y="0" scaleX="1" scaleY="1" source="s1bg_png" locked="true"/>
+	</e:Group>
+	<e:Group x="0" y="874.42" anchorOffsetX="0" width="1604.21" anchorOffsetY="0" height="824.61" name="room">
+		<e:Rect width="85" height="26.67" x="344.67" y="625.91" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="85" height="26.67" x="947.85" y="625.91" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="511" height="17.67" x="433.35" y="668.91" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="287" height="26.67" x="380.11" y="486.25" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="287" height="26.67" x="702.68" y="483.25" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="222" height="18.67" x="0" y="304.08" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="239" height="17.67" x="0" y="161.5" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="274" height="20.67" x="581.17" y="187.5" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="218" height="14.67" x="375.01" y="318.75" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="206" height="16.67" x="804.11" y="322.09" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="205" height="14.67" x="1196.11" y="645.25" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="222" height="18.67" x="0" y="450.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="222" height="18.67" x="0" y="597.25" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="222" height="18.67" x="0" y="722.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="1628.33" height="24" x="0" y="800.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group width="688" height="1698.5" x="1607.5" y="1" anchorOffsetX="0" anchorOffsetY="0" name="room">
+		<e:Rect width="249.33" height="28" x="400.67" y="1582" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="259.33" height="28" x="94.7" y="1430.17" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="278.33" height="28" x="94.7" y="1546" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="237.33" height="28" x="94.7" y="1328.67" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="780.83" height="24" x="-24.5" y="1675" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="264.33" height="28" x="373.03" y="1416.67" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="277.33" height="28" x="360.03" y="1258.67" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="213.33" height="28" x="430.67" y="701.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="184.33" height="28" x="436.67" y="554.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="293.33" height="14" x="121.2" y="568.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="437.33" height="13" x="125.86" y="406.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="437.33" height="13" x="125.33" y="261.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="437.33" height="13" x="125.86" y="108.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="231.33" height="17" x="94.7" y="1249.34" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="220.33" height="17" x="94.7" y="1169" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="209.33" height="15" x="89.2" y="1094.42" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="192.33" height="15" x="94.7" y="1027.42" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="192.33" height="15" x="89.2" y="967.42" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="183.33" height="15" x="89.2" y="910.42" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="183.33" height="15" x="89.2" y="856.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="81.33" height="24" x="-26.99" y="841.75" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1" name="newFloor"/>
+		<e:Rect width="461.33" height="24" x="316.34" y="844.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1" name="newFloor"/>
+	</e:Group>
+	<e:Group width="1699.5" height="826" x="2298.5" y="874.42" anchorOffsetX="0" anchorOffsetY="0" name="room">
+		<e:Rect width="1731.83" height="25" x="-36.5" y="800.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="1248" height="25" x="172.42" y="475.59" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="1244" height="17" x="172.42" y="724.25" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="926" height="16" x="492.5" y="568.75" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="228" height="17" x="693.42" y="422.75" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="212" height="14" x="221" y="297.75" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="219" height="14" x="216" y="197.17" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="247" height="16" x="1437.5" y="462.25" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="251" height="16" x="1433.5" y="384.42" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="257" height="16" x="1429.5" y="286.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="212" height="19" x="1472.5" y="161" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="13" height="43" x="292.75" y="594.25" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="13" height="43" x="338" y="596.25" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="12" height="22" x="934.5" y="637.25" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="12" height="22" x="970.5" y="637.92" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group width="1604.06" height="872.08" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" name="room">
+		<e:Rect width="1622.33" height="25" x="0" y="841.75" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="583.33" height="20" x="990.35" y="603.08" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="583.33" height="20" x="990.35" y="452.42" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="583.33" height="20" x="990.35" y="319.08" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="157.33" height="28" x="529.17" y="623.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="129.33" height="28" x="529.17" y="717.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="211.33" height="28" x="747.68" y="745.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="91.33" height="28" x="747.68" y="605.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="597.33" height="24" x="989.68" y="741.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="432.33" height="28" x="75.68" y="640.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+		<e:Rect width="325.33" height="28" x="0" y="464.08" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+	</e:Group>
+	<e:Group width="1699.97" height="865.58" x="2299" y="4.84" anchorOffsetX="0" anchorOffsetY="0" name="room">
+		<e:Rect width="1725.33" height="25" x="-25.36" y="839.24" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="205" height="14" x="254" y="704.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="205" height="14" x="254" y="760.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="205" height="14" x="254" y="628.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="174" height="14" x="477" y="632.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="174" height="14" x="661.42" y="630.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="174" height="14" x="853.5" y="760.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="237" height="8" x="1397.5" y="754.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="174" height="14" x="853.5" y="625.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="174" height="14" x="849.25" y="473.24" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="174" height="14" x="853.5" y="334.24" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="174" height="14" x="663.31" y="480.24" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="174" height="14" x="476" y="761.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="174" height="14" x="661.42" y="760.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="205" height="14" x="254" y="543.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="205" height="14" x="254" y="443.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="241" height="10" x="0" y="632.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="247" height="9" x="0.5" y="765.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="241" height="10" x="0" y="507.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="241" height="10" x="0.5" y="320.24" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="134" height="25" x="1437" y="443.58" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="54" height="27" x="1238" y="438.08" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="44" height="47" x="1121" y="506.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="75" height="25" x="1112" y="712.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+		<e:Rect width="96" height="16" x="1605" y="636.74" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1" scaleX="1" scaleY="1"/>
+	</e:Group>
 </e:Skin>

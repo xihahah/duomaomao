@@ -1,0 +1,15 @@
+{"file":"main.png","frames":{
+"开始游戏":{"x":359,"y":804,"w":113,"h":27,"offX":0,"offY":0,"sourceW":113,"sourceH":27},
+"图层 2":{"x":0,"y":749,"w":241,"h":87,"offX":0,"offY":0,"sourceW":241,"sourceH":87},
+"图层 3":{"x":0,"y":916,"w":185,"h":65,"offX":0,"offY":0,"sourceW":185,"sourceH":65},
+"图层 4":{"x":0,"y":838,"w":235,"h":76,"offX":0,"offY":0,"sourceW":235,"sourceH":76},
+"图层 5":{"x":377,"y":893,"w":138,"h":66,"offX":0,"offY":0,"sourceW":138,"sourceH":66},
+"选择地图":{"x":243,"y":804,"w":114,"h":28,"offX":0,"offY":0,"sourceW":114,"sourceH":28},
+"bbtn":{"x":187,"y":916,"w":188,"h":53,"offX":0,"offY":0,"sourceW":188,"sourceH":53},
+"bbtn_hover":{"x":427,"y":642,"w":188,"h":53,"offX":0,"offY":0,"sourceW":188,"sourceH":53},
+"bg":{"x":0,"y":0,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640},
+"biaoti":{"x":0,"y":642,"w":347,"h":105,"offX":0,"offY":0,"sourceW":347,"sourceH":105},
+"pbtn":{"x":243,"y":749,"w":188,"h":53,"offX":0,"offY":0,"sourceW":188,"sourceH":53},
+"pbtn_hover":{"x":237,"y":838,"w":188,"h":53,"offX":0,"offY":0,"sourceW":188,"sourceH":53},
+"yhm":{"x":0,"y":983,"w":80,"h":24,"offX":0,"offY":0,"sourceW":80,"sourceH":24},
+"zh":{"x":82,"y":983,"w":55,"h":24,"offX":0,"offY":0,"sourceW":55,"sourceH":24}}}

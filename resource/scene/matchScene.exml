@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="matchSceneSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="170cdbe848e" ></w:Config>
+	<e:Image x="0" y="0" source="match_json.matchbg"/>
+	<e:Image source="match_json.tit" x="460" y="49"/>
+	<e:Button id="backBtn" label="" x="79" y="51">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="match_json.btn" source.down="match_json.btn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group width="576" height="38" anchorOffsetX="0" anchorOffsetY="0" x="280" y="120">
+		<e:Image source="match_json.yjjx" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image source="match_json.fjh" x="141" y="11"/>
+		<e:Label id="rid" text="" x="221" y="10" size="22" textColor="0xccc7c7"/>
+	</e:Group>
+	<e:Group width="180" height="200" x="121" y="248" anchorOffsetX="0">
+		<e:Image id="rowerTX" source="match_json.p1" y="2" scaleX="1" scaleY="1" horizontalCenter="0" width="140" height="140"/>
+		<e:Image source="match_json.id" x="64" y="161" visible="false"/>
+		<e:Label id="rowerID" text="玩家id" y="159" size="20" textAlign="center" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group width="180" height="200" x="360" y="248" anchorOffsetX="0">
+		<e:Image id="rlTX" source="match_json.p1" y="2" scaleX="1" scaleY="1" horizontalCenter="0" width="140" height="140"/>
+		<e:Label id="rlID" text="玩家id" y="161" size="20" textAlign="center" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group width="180" height="200" x="603" y="248" anchorOffsetX="0">
+		<e:Image x="22" y="2" scaleX="1" scaleY="1" source="match_json.p2"/>
+		<e:Image x="61" y="162" source="match_json.wait"/>
+	</e:Group>
+	<e:Group width="180" height="200" x="844" y="248" anchorOffsetX="0">
+		<e:Image x="22" y="2" scaleX="1" scaleY="1" source="match_json.p2"/>
+		<e:Image x="64" y="161" source="match_json.wait"/>
+	</e:Group>
+	<e:Button id="testBtn" label="跳过测试" x="474.5" y="540">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="main_json.bbtn" source.down="main_json.bbtn_hover"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="KaiTi" size="30" textColor="0x494848" textAlign="center"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

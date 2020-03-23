@@ -1,0 +1,20 @@
+{
+	"initial": [
+		"js/egret.min_fa0309d9.js",
+		"js/egret.web.min_d1451e99.js",
+		"js/eui.min_493403ce.js",
+		"js/assetsmanager.min_2ef412b7.js",
+		"js/tween.min_6c5a88f9.js",
+		"js/promise.min_83a6a5d.js",
+		"js/socket.min_8b4cb752.js",
+		"js/game.min_16249d0f.js",
+		"js/matchvs.min_5128d9ee.js",
+		"js/WXCloudApi.min_ee8270d4.js",
+		"js/egretmgobe.min_3490453c.js",
+		"js/physics.min_d425a559.js"
+	],
+	"game": [
+		"js/default.thm_d67e5837.js",
+		"js/main.min_5f315fb8.js"
+	]
+}

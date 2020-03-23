@@ -24,13 +24,6 @@ var Camera = (function (_super) {
     };
     Camera.prototype.childrenCreated = function () {
         _super.prototype.childrenCreated.call(this);
-        //键盘控制
-        // document.addEventListener("keydown",e=>this.handleKeydown(e),false);
-        // document.addEventListener("keyup",()=>this.handleKeyup(),false);
-        // //摇杆控制
-        // this.controlBtn.addEventListener("cb_start",this.cb_handleStar,this);
-        // this.controlBtn.addEventListener("cb_move",this.cb_handleMove,this);
-        // this.controlBtn.addEventListener("cb_end",this.cb_handleEnd,this);
     };
     //初始化相机 绑定镜头
     Camera.prototype.init = function (container) {
@@ -38,69 +31,64 @@ var Camera = (function (_super) {
         this.m_zoomX = this.m_container.x;
         this.m_zoomY = this.m_container.y;
     };
-    // onenterFrame(){
-    // 	this.playerMove();
-    // 	// this.m_container.info();
-    // 	let testBox = this.m_container.testBox;
-    // 	console.log(this.hitTest(testBox,this.m_follower));
-    // }
     /**设置镜头锚点
          * LRRate 左右比例
          * UDRate 上下比例
          * 根据左右及上下的比例确定镜头的聚焦点
+         *     scale是根据锚点来缩放的 所以
         */
     // setAnchor(LRRate:number, UDRate:number){
     // 	if(this.m_container != null){
-    // 		//锚点位置
-    // 		this.m_container.anchorOffsetX = this.m_container.width * LRRate;
-    // 		this.m_container.anchorOffsetY = this.m_container.height * UDRate;
-    // 			this.m_container.x = this.m_container.anchorOffsetX;
-    // 			this.m_container.y = this.m_container.anchorOffsetY;
-    // 			this.m_zoomX = this.m_container.anchorOffsetX;
-    // 			this.m_zoomY = this.m_container.anchorOffsetY;
+    // 		//锚点位置  
+    // 		// this.m_container.anchorOffsetX = this.m_container.width * LRRate;
+    // 		// this.m_container.anchorOffsetY = this.m_container.height * UDRate;
+    // 		// this.m_container.x = this.m_container.anchorOffsetX;
+    // 		// this.m_container.y = this.m_container.anchorOffsetY;
+    // 		// this.m_zoomX = this.m_container.anchorOffsetX;
+    // 		// this.m_zoomY = this.m_container.anchorOffsetY;
     // 	}
     // }
     Camera.prototype.setAnchor = function () {
         if (this.m_container != null) {
-            var topY = 0;
-            var bottomY = this.m_height - this.m_container.height; //-1060
-            var leftX = 0;
-            var rightX = this.m_width - this.m_container.width; //-
-            //设置场景位置
-            if (this.m_width / 2 - this.m_follower.x > leftX) {
-                // console.log("最左边");
-                this.m_container.x = leftX;
-            }
-            else if (this.m_width / 2 - this.m_follower.x > rightX) {
-                // console.log("最中间");
-                this.m_container.x = this.m_width / 2 - this.m_follower.x;
-            }
-            else {
-                // console.log("最右边");
-                this.m_container.x = rightX;
-            }
-            if (this.m_height / 2 - this.m_follower.y > topY) {
-                // console.log("最上边");
-                this.m_container.y = topY;
-            }
-            else if (this.m_height / 2 - this.m_follower.y > bottomY) {
-                // console.log("最中间");
-                this.m_container.y = this.m_height / 2 - this.m_follower.y;
-            }
-            else {
-                // console.log("最下边");
-                this.m_container.y = bottomY;
-            }
+            this.setPosition();
             //设置焦点
             this.m_zoomX = this.m_follower.x;
             this.m_zoomY = this.m_follower.y;
         }
     };
+    //设置scene位置
+    Camera.prototype.setPosition = function () {
+        // console.log(this.m_follower.roomNum);
+        var nowRoom = this.m_container.getChildAt(this.m_follower.roomNum);
+        var topY = nowRoom.y;
+        var bottomY = topY + nowRoom.height - this.m_height;
+        var leftX = nowRoom.x;
+        var rightX = leftX + nowRoom.width - this.m_width;
+        //设置场景位置
+        var targetX = this.m_follower.x - this.m_width / 2;
+        //暂时
+        var targetY = this.m_follower.y - this.m_height / 2;
+        //计算x
+        if (targetX < leftX) {
+            targetX = leftX;
+        }
+        else if (targetX > rightX) {
+            targetX = rightX;
+        }
+        //计算y
+        if (targetY < topY) {
+            targetY = topY;
+        }
+        else if (targetY > bottomY) {
+            targetY = bottomY;
+        }
+        this.m_container.x = -targetX;
+        this.m_container.y = -targetY;
+    };
     /**设置镜头焦距
      zoom 焦距，镜头距离世界的比例，默认为1，焦距越小，视觉越大
         */
     Camera.prototype.setZoom = function (zoom) {
-        // console.log(this.m_container.width + "  " + this.m_container.height );
         if (this.m_container != null) {
             this.m_container.scaleX = zoom;
             this.m_container.scaleY = zoom;
@@ -118,127 +106,87 @@ var Camera = (function (_super) {
             this.m_follower = follower;
             this.m_zoomX = this.m_follower.x;
             this.m_zoomY = this.m_follower.y;
+            this.m_cameraOffsetY = this.m_follower.speedY;
             // this.setAnchor(this.m_follower.x / this.m_container.width, this.m_follower.y / this.m_container.height);
             this.setAnchor();
         }
     };
     //保持跟随者在中央
-    Camera.prototype.followCenter = function () {
-        var centerX = (this.m_width - this.m_follower.width) / 2;
-        var centerY = (this.m_height - this.m_follower.height) / 2;
-        if (this.m_follower.x != centerX)
-            return false;
+    Camera.prototype.followCenterX = function () {
+        var left = this.x - this.m_container.x + this.m_width / 2 - 10;
+        var right = this.x - this.m_container.x + this.m_width / 2 + 10;
+        if ((this.m_cameraOffsetX > 0 && this.m_follower.x > right) || (this.m_cameraOffsetX < 0 && this.m_follower.x < left))
+            return true;
         else
-            return true;
+            return false;
     };
-    //摄像机移动时   player位置不动
-    //摄像机边界   防止角色走出镜头   
-    Camera.prototype.cameraSideX = function (speed) {
-        var targetX = this.m_follower.x + speed;
-        //防止targetx不在中间
-        var left = (this.m_zoomX - this.m_width / 2) < 0 ? 0 : (this.m_zoomX - this.m_width / 2);
-        var right = (this.m_zoomX + this.m_width / 2) > this.m_container.width ? this.m_container.width : (this.m_zoomX + this.m_width / 2);
-        if (targetX < left + this.m_follower.width / 2) {
-            //左边界
-            return false;
-        }
-        else if (targetX > right - this.m_follower.width / 2) {
-            //右边界
-            return false;
-        }
-        else {
-            return true;
-        }
+    //对外方法 相机移动
+    Camera.prototype.cameraMove = function () {
+        this.m_cameraOffsetX = this.m_follower.speedX * this.m_follower.dir;
+        this.addEventListener(egret.Event.ENTER_FRAME, this.move, this);
     };
-    Camera.prototype.cameraSideY = function (speed) {
-        var targetY = this.m_follower.y + speed;
-        //防止targety不在中间  在偏下或者偏上位置
-        var top = (this.m_zoomY - this.m_height / 2) < 0 ? 0 : this.m_zoomY - this.m_height / 2;
-        var bottom = (this.m_zoomY + this.m_height / 2) > this.m_container.height ? this.m_container.height : (this.m_zoomY + this.m_height / 2);
-        if (targetY < top) {
-            //上边界
-            return false;
-        }
-        else if (targetY > bottom - this.m_follower.height / 3 * 2) {
-            //下边界
-            return false;
-        }
-        else {
-            return true;
+    //停止移动
+    Camera.prototype.cStopMove = function () {
+        this.removeEventListener(egret.Event.ENTER_FRAME, this.move, this);
+    };
+    //////////////////////////////////////////摄像机更新方法///////////////////////
+    //下落改进
+    Camera.prototype.cameraFall = function () {
+        var nowRoom = this.m_container.getChildAt(this.m_follower.roomNum);
+        //不变的
+        var plane = nowRoom.y + nowRoom.height; // - this.scene.player.height/2-10
+        //camera位置
+        var camera = this.y - this.m_container.y;
+        var player = this.m_follower;
+        var l2 = Math.round(this.y + this.m_height / 3 * 2 - this.m_container.y);
+        //相机偏移   
+        //当符合条件  且player不是跳跃时  相机可以下移
+        if (camera < plane - this.m_height && player.y > l2) {
+            this.m_container.y -= this.m_cameraOffsetY;
         }
     };
-    //摄像机X轴移动的有向速度
-    Camera.prototype.CameraMoveX = function (x) {
-        // console.log("camera move x");
-        this.m_cameraOffsetX = x;
-        this.CameraUpdate();
-        this.m_cameraOffsetX = 0;
+    //上移
+    //修正镜头位置   主要是跳跃时上移
+    Camera.prototype.cameraUp = function () {
+        var nowRoom = this.m_container.getChildAt(this.m_follower.roomNum);
+        var rTop = nowRoom.y;
+        var rBottom = nowRoom.y + nowRoom.height;
+        var target = this.m_follower.y;
+        var l1 = Math.round(this.y + this.m_height / 3 - this.m_container.y);
+        var l2 = Math.round(this.y + this.m_height / 3 * 2 - this.m_container.y);
+        var l3 = Math.round(this.y + this.m_height - this.m_container.y);
+        if (target < l1) {
+            // console.log("上");
+            //如果到顶了
+            var y1 = this.y - this.m_container.y - rTop < l2 - this.m_follower.y ? this.y - this.m_container.y - rTop : l2 - this.m_follower.y;
+            egret.Tween.get(this.m_container).to({
+                y: this.m_container.y + y1
+            }, 500);
+        }
+        // else if(target< l2){
+        // 	console.log("中");
+        // }else if(target< l3){
+        // 	console.log("下");
+        // 	if(l3 < rBottom){
+        // 		let y = rBottom-l3;
+        // 		this.camera.CameraMoveY(10);
+        // 		// this.scene.player.y -= 10;
+        // 	}
+        // };
     };
-    //摄像机Y轴移动的有向速度
-    Camera.prototype.CameraMoveY = function (y) {
-        // console.log("camera move y");
-        this.m_cameraOffsetY = y;
-        this.CameraUpdate();
-        this.m_cameraOffsetY = 0;
-    };
-    //判断整个场景的边界
-    //x方向边界判断
-    Camera.prototype.containerSideX = function (speed) {
-        var leftX = 0;
-        var rightX = this.m_width - this.m_container.width; //-
-        //设置场景位置
-        var targetX = this.m_container.bg1.x - speed;
-        if (targetX > leftX) {
-            this.m_container.bg1.x = leftX;
-            return false;
+    //相机左右移动
+    Camera.prototype.move = function () {
+        var sceneLeft = this.m_container.x;
+        var sceneRight = sceneLeft + this.m_container.width;
+        //camera是静止的  
+        var left = 0;
+        var right = this.m_width;
+        // let player = this.m_follower;
+        //相机偏移   右 左
+        if ((this.m_cameraOffsetX > 0 && sceneRight > right && this.followCenterX()) || (this.m_cameraOffsetX < 0 && sceneLeft < left && this.followCenterX())) {
+            this.m_container.x -= this.m_cameraOffsetX;
         }
-        else if (targetX < rightX) {
-            this.m_container.bg1.x = rightX;
-            return false;
-        }
-        else {
-            return true;
-        }
-    };
-    //y方向边界判断
-    Camera.prototype.containerSideY = function (speed) {
-        var topY = this.m_container.height - this.m_height; //1050
-        var bottomY = 0; //0
-        var targetY = this.m_container.bg1.y - speed;
-        if (targetY > topY) {
-            this.m_container.bg1.y = topY;
-            return false;
-        }
-        else if (targetY < bottomY) {
-            this.m_container.bg1.y = bottomY;
-            return false;
-        }
-        else {
-            return true;
-        }
-    };
-    /**通过摄像头偏移值计算世界内物品的偏移值
-     * 如果设置了跟随者，则跟随者在世界内的距离不变，其他物体根据镜头偏移量进行坐标修正
-     * 如果没有设置跟随者，则视世界全局可见，全员根据镜头偏移量进行坐标修正
-     * 注意1：摄像机移动的实现方式实际是世界内物品相对于世界进行的坐标的移动，但世界本身是固定的，变化的只是世界内部的物体
-     * 注意2:实际上，这里的坐标修正应该交给各个世界对象去自行实现，以便各物体对象能以此修正自身的行为，这里为了形成一个
-     * 统一的认识而把偏移的工作放进摄像机，就造成摄像机的功能比较单一的问题
-    */
-    Camera.prototype.CameraUpdate = function () {
-        for (var i = 0; i < this.m_container.numChildren; i++) {
-            if (this.m_follower != null) {
-                //设置了跟随者
-                if (this.m_follower != this.m_container.getChildAt(i)) {
-                    this.m_container.getChildAt(i).x -= this.m_cameraOffsetX;
-                    this.m_container.getChildAt(i).y -= this.m_cameraOffsetY;
-                }
-            }
-            else {
-                //没有设置跟随者
-                this.m_container.getChildAt(i).x -= this.m_cameraOffsetX;
-                this.m_container.getChildAt(i).y -= this.m_cameraOffsetY;
-            }
-        }
+        // this.dispatchEvent(new egret.Event("carema_movex"));
     };
     return Camera;
 }(eui.Component));

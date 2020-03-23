@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="miniPlayerSkin" width="211" height="99" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="170e34ddc6c" ></w:Config>
+	<e:Image x="0" y="0" source="tubiao_json.cat"/>
+	<e:Group width="48" height="66" x="46.5" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image x="0" y="0" name="no" source="tubiao_json.mouse"/>
+		<e:Image x="-2" y="0" name="die" source="tubiao_json.moused" visible="false"/>
+	</e:Group>
+	<e:Group width="48" height="66" x="95.5" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image x="0" y="0" name="no" source="tubiao_json.mouse"/>
+		<e:Image x="-2" y="0" name="die" source="tubiao_json.moused" visible="false"/>
+	</e:Group>
+	<e:Group width="48" height="66" x="143.5" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image x="0" y="0" name="no" source="tubiao_json.mouse"/>
+		<e:Image x="-2" y="0" name="die" source="tubiao_json.moused" visible="false"/>
+	</e:Group>
+</e:Skin>

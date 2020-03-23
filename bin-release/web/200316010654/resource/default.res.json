@@ -1,0 +1,317 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,testmap_jpg,left_png,left_hover_png,jump_hover_png,jump_png,right_png,right_hover_png,cat_mc_json,cat_tex_png,bgimage_jpg,default_json,y_png,y1_png,y2_png,down_png,down_hover_png,attack_png,attack_hover_png,attackTextrue_png,wupin_json,main_json,5 (9)_png,match_json,s1r1_json,s1r2_json,s1bg_png,s1l1_json,s1l2_json,zit_png,zit_fnt,carry_png,carry_hover_png,tip_png,tipr_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/images/testmap.jpg",
+			"type": "image",
+			"name": "testmap_jpg"
+		},
+		{
+			"url": "assets/images/left.png",
+			"type": "image",
+			"name": "left_png"
+		},
+		{
+			"url": "assets/images/left_hover.png",
+			"type": "image",
+			"name": "left_hover_png"
+		},
+		{
+			"url": "assets/images/jump_hover.png",
+			"type": "image",
+			"name": "jump_hover_png"
+		},
+		{
+			"url": "assets/images/jump.png",
+			"type": "image",
+			"name": "jump_png"
+		},
+		{
+			"url": "assets/images/right.png",
+			"type": "image",
+			"name": "right_png"
+		},
+		{
+			"url": "assets/images/right_hover.png",
+			"type": "image",
+			"name": "right_hover_png"
+		},
+		{
+			"url": "assets/player/cat_mc.json",
+			"type": "json",
+			"name": "cat_mc_json"
+		},
+		{
+			"url": "assets/player/cat_tex.png",
+			"type": "image",
+			"name": "cat_tex_png"
+		},
+		{
+			"url": "assets/images/背景图.jpg",
+			"type": "image",
+			"name": "bgimage_jpg"
+		},
+		{
+			"url": "assets/p2/default.json",
+			"type": "json",
+			"name": "default_json"
+		},
+		{
+			"url": "assets/images/y.png",
+			"type": "image",
+			"name": "y_png"
+		},
+		{
+			"url": "assets/images/y1.png",
+			"type": "image",
+			"name": "y1_png"
+		},
+		{
+			"url": "assets/images/y2.png",
+			"type": "image",
+			"name": "y2_png"
+		},
+		{
+			"url": "assets/images/down.png",
+			"type": "image",
+			"name": "down_png"
+		},
+		{
+			"url": "assets/images/down_hover.png",
+			"type": "image",
+			"name": "down_hover_png"
+		},
+		{
+			"name": "attack_png",
+			"type": "image",
+			"url": "assets/images/attack.png"
+		},
+		{
+			"name": "attack_hover_png",
+			"type": "image",
+			"url": "assets/images/attack_hover.png"
+		},
+		{
+			"name": "attackTextrue_png",
+			"type": "image",
+			"url": "assets/images/attackTextrue.png"
+		},
+		{
+			"name": "wupin_json",
+			"type": "sheet",
+			"url": "assets/images/wupin.json",
+			"subkeys": "p_0000s_0008_闹钟,p_0000s_0011_紫色熊熊,p_0000s_0012_蓝色薯片,p_0000s_0013_粉色薯片,p_0000s_0014_绿色薯片,p_0000s_0015_镜子,p_0000s_0016_红高跟,p_0000s_0017_黄高跟,p_0000s_0000_刀,p_0000s_0001_碟,p_0000s_0002_勺子,p_0000s_0003_叉子,p_0000s_0004_锅2,p_0000s_0005_手套,p_0000s_0006_锅"
+		},
+		{
+			"name": "main_json",
+			"type": "sheet",
+			"url": "assets/images/main.json",
+			"subkeys": "开始游戏,图层 2,图层 3,图层 4,图层 5,选择地图,bbtn,bbtn_hover,bg,biaoti,pbtn,pbtn_hover,yhm,zh"
+		},
+		{
+			"name": "5 (9)_png",
+			"type": "image",
+			"url": "assets/images/5 (9).png"
+		},
+		{
+			"name": "match_json",
+			"type": "sheet",
+			"url": "assets/images/match.json",
+			"subkeys": "p2,tit,wait,yjjx,bg,btn,fjh,hawkd,id,p1"
+		},
+		{
+			"name": "s1r1_json",
+			"type": "sheet",
+			"url": "assets/s1/s1r1.json",
+			"subkeys": "图层 91,图层 92,图层 93,图层 94,图层 95,冰淇淋,蛋糕,锅,锅-1,果,汉堡,鸡米花,酱油,可乐,垃圾桶,萝卜,面,蘑菇,奶,奶茶,柠檬,瓶子,瓶子2"
+		},
+		{
+			"name": "s1r2_json",
+			"type": "sheet",
+			"url": "assets/s1/s1r2.json",
+			"subkeys": "积木3,木马,竖书本,竖书本-1,竖书本-2,竖书本-3,竖书本-4,图层 6 副本 3,玩具,玩具-1,玩具-2,星星,橫书本,橫书本-1,画,积木,积木1,积木2"
+		},
+		{
+			"name": "s1bg_png",
+			"type": "image",
+			"url": "assets/s1/s1bg.png"
+		},
+		{
+			"name": "s1l1_json",
+			"type": "sheet",
+			"url": "assets/s1/s1l1.json",
+			"subkeys": "图层 90,nz,图层 71,图层 72,图层 74,图层 88,图层 89"
+		},
+		{
+			"name": "s1l2_json",
+			"type": "sheet",
+			"url": "assets/s1/s1l2.json",
+			"subkeys": "熊(2),图层 84,图层 85,图层 86,图层 87"
+		},
+		{
+			"name": "zit_png",
+			"type": "image",
+			"url": "assets/images/zit.png"
+		},
+		{
+			"name": "zit_fnt",
+			"type": "font",
+			"url": "assets/images/zit.fnt"
+		},
+		{
+			"name": "carry_png",
+			"type": "image",
+			"url": "assets/images/carry.png"
+		},
+		{
+			"name": "carry_hover_png",
+			"type": "image",
+			"url": "assets/images/carry_hover.png"
+		},
+		{
+			"name": "tip_png",
+			"type": "image",
+			"url": "assets/images/tip.png"
+		},
+		{
+			"name": "tipr_png",
+			"type": "image",
+			"url": "assets/images/tipr.png"
+		}
+	]
+}

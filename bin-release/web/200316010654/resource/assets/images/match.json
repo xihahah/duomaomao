@@ -1,0 +1,11 @@
+{"file":"match.png","frames":{
+"matchbg":{"x":0,"y":0,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640},
+"btn":{"x":546,"y":680,"w":20,"h":30,"offX":0,"offY":0,"sourceW":20,"sourceH":30},
+"fjh":{"x":342,"y":702,"w":68,"h":20,"offX":0,"offY":0,"sourceW":68,"sourceH":20},
+"hawkd":{"x":342,"y":680,"w":202,"h":20,"offX":0,"offY":0,"sourceW":202,"sourceH":20},
+"id":{"x":476,"y":702,"w":54,"h":19,"offX":0,"offY":0,"sourceW":54,"sourceH":19},
+"yjjx":{"x":0,"y":642,"w":571,"h":36,"offX":0,"offY":0,"sourceW":571,"sourceH":36},
+"p1":{"x":0,"y":680,"w":140,"h":140,"offX":0,"offY":0,"sourceW":140,"sourceH":140},
+"p2":{"x":573,"y":642,"w":140,"h":140,"offX":0,"offY":0,"sourceW":140,"sourceH":140},
+"tit":{"x":142,"y":680,"w":198,"h":32,"offX":0,"offY":0,"sourceW":198,"sourceH":32},
+"wait":{"x":412,"y":702,"w":62,"h":19,"offX":0,"offY":0,"sourceW":62,"sourceH":19}}}

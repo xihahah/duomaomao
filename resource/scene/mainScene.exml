@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="mainSceneSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="yun">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{140}" x="{911.76}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="5000">
+					<tween:props>
+						<e:Object y="{183.14}" x="{637.45}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="2000"/>
+				<tween:Set/>
+				<tween:To duration="3000">
+					<tween:props>
+						<e:Object y="{203.5}" x="{271.7}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="2250"/>
+				<tween:Set/>
+				<tween:To duration="1250">
+					<tween:props>
+						<e:Object x="{-165}" y="{172.5}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{20}" y="{252.28}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="4000">
+					<tween:props>
+						<e:Object x="{394.5}" y="{206.71}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="750"/>
+				<tween:Set/>
+				<tween:To duration="3250">
+					<tween:props>
+						<e:Object x="{771.5}" y="{254.93}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="2000"/>
+				<tween:Set/>
+				<tween:To duration="2500">
+					<tween:props>
+						<e:Object x="{1015.5}" y="{85.5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:Wait duration="700"/>
+				<tween:Set/>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object x="{1136}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}" >
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{1136}" y="{48.13}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1750">
+					<tween:props>
+						<e:Object x="{970.85}" y="{71.47}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="2300">
+					<tween:props>
+						<e:Object x="{753.8}" y="{55.67}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="2950">
+					<tween:props>
+						<e:Object x="{475.41}" y="{131.78}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="3250">
+					<tween:props>
+						<e:Object x="{168.71}" y="{103.96}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="3250">
+					<tween:props>
+						<e:Object x="{-141.5}" y="{106.5}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image2}">
+				<tween:Set/>
+				<tween:To duration="13500">
+					<tween:props>
+						<e:Object x="{696.84}" y="{30.5}"/>
+					</tween:props>
+				</tween:To>
+				<!--<tween:props>
+				<e:Object loop="true"/>
+				</tween:props>-->
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="170c489465b" ></w:Config>
+	<e:Image source="main_json.bg" x="0" y="0"/>
+	<e:Image id="image1" source="main_json.图层 5" x="771.5" y="39.25"/>
+	<e:Image id="image2" source="main_json.图层 4" x="79" y="38.13"/>
+	<e:Image id="image" source="main_json.图层 3" x="1043.5" y="138.5"/>
+	<e:Image id="image0" source="main_json.图层 2" x="864.11" y="225"/>
+	<e:Image source="main_json.biaoti" x="394.5" y="120"/>
+	<e:Button id="startBtn" label="" x="474" y="486">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="main_json.pbtn" source.down="main_json.pbtn_hover"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="main_json.开始游戏" x="41" y="14"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group width="318" height="74" x="20" y="20" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="utx" width="60" height="60" x="12" y="3.5" anchorOffsetX="0" anchorOffsetY="0" fillMode="scale" source="tubiao_json.user"/>
+		<e:Image source="main_json.zh" x="86" y="7" anchorOffsetX="0" width="51" anchorOffsetY="0" height="22.25"/>
+		<e:Image source="main_json.yhm" x="86" y="41" anchorOffsetX="0" width="75" anchorOffsetY="0" height="22.5"/>
+		<e:Label id="uid" text="" x="144" y="5.5" textColor="0x3f3f3f" size="25"/>
+		<e:Label id="uname" text="" x="166.5" y="42.63" textColor="0x3F3F3F" size="25"/>
+	</e:Group>
+</e:Skin>

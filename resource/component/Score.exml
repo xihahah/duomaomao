@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ScoreSkin" width="73" height="87" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="170e368271a" ></w:Config>
+	<e:Image x="0" y="0" anchorOffsetX="0" width="70" anchorOffsetY="0" height="83" source="tubiao_json.score"/>
+</e:Skin>

@@ -15,13 +15,45 @@ var GameData = (function () {
     //版本号
     GameData.GameVersion = 1.0;
     //接口请求调用对象
-    GameData.engine = new MatchvsEngine();
+    // static engine:MatchvsEngine = new MatchvsEngine();
     //接口调用返回对象
-    GameData.response = new MatchvsResponse();
+    // static response:MatchvsResponse = new MatchvsResponse();
     //舞台大小
     GameData.stageWidth = 1136;
     GameData.stageHeight = 640;
+    //游戏数据
+    GameData.gameconfig = {
+        bNum: 20,
+        bwidth: 30,
+        bheight: 30,
+        pNum: 4,
+        pspeedx: 10,
+        pspeeedy: 10,
+        pjumpspeed: 150,
+        sNum: 4,
+        rwscore: 75,
+        catchscore: 100,
+    };
+    //固定物体类型
+    GameData.fixedType = {
+        room: "room",
+        nfloor: "newFloor",
+    };
     return GameData;
 }());
 __reflect(GameData.prototype, "GameData");
+//扮演的类型
+var playType;
+(function (playType) {
+    playType[playType["cat"] = 0] = "cat";
+    playType[playType["mouse"] = 1] = "mouse";
+    playType[playType["box"] = 2] = "box";
+})(playType || (playType = {}));
+//字体
+var font;
+var timefont;
+var timefontwarn;
+var mainfont;
+// 生成的游戏数据
+var gamedata = {};
 //# sourceMappingURL=GameData.js.map

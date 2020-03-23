@@ -15,18 +15,27 @@
 	],
 	"game": [
 		"bin-debug/component/Scene.js",
-		"bin-debug/component/Controler.js",
+		"bin-debug/component/renwu.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
+		"bin-debug/MsEngine.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
+		"bin-debug/component/Bullet.js",
 		"bin-debug/component/Camera.js",
-		"bin-debug/GameData.js",
-		"bin-debug/component/controlScene.js",
+		"bin-debug/component/miniPlayer.js",
 		"bin-debug/component/Player.js",
+		"bin-debug/GameData.js",
+		"bin-debug/component/Result.js",
 		"bin-debug/AssetAdapter.js",
 		"bin-debug/component/scene1.js",
+		"bin-debug/component/Score.js",
+		"bin-debug/component/SmallObj.js",
+		"bin-debug/component/Sticker.js",
+		"bin-debug/component/Timer.js",
+		"bin-debug/component/Tip.js",
 		"bin-debug/scene/gameScene.js",
-		"bin-debug/scene/startScene.js"
+		"bin-debug/scene/mainScene.js",
+		"bin-debug/scene/matchScene.js"
 	]
 }

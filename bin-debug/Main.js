@@ -46,51 +46,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var Main = (function (_super) {
     __extends(Main, _super);
     function Main() {
-        // private matchvs: MsEngine;
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.scene = new startScene();
-        //初始化回调
-        _this.initRespone = function (status) {
-            if (status == 200) {
-                _this.scene.setText("初始化成功");
-                //注册用户
-                GameData.engine.registerUser();
-            }
-            else {
-                _this.scene.setText("初始化失败");
-            }
-        };
-        //注册回调
-        _this.registerRespone = function (user) {
-            if (user.status == 0) {
-                _this.scene.setText("注册成功！");
-                _this.scene.setUser(user);
-                GameData.engine.login(user.id, user.token, "deviceID");
-            }
-            else {
-                _this.scene.setText("注册失败！");
-            }
-        };
-        //登录回调
-        _this.loginResponse = function (loginRsp) {
-            if (loginRsp.status == 200) {
-                _this.scene.setText("登陆成功！");
-            }
-            else {
-                _this.scene.setText("登陆失败！");
-            }
-        };
-        //加入房间回调 包括随机和不随机
-        _this.joinResponse = function (status, roomUserInfoList, roomInfo) {
-            if (status == 200) {
-                _this.scene.setText("已加入房间");
-                _this.scene.setText(roomInfo.roomID);
-            }
-            else {
-                _this.scene.setText("加入失败，请重试");
-            }
-        };
-        return _this;
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     Main.prototype.createChildren = function () {
         _super.prototype.createChildren.call(this);
@@ -131,7 +87,7 @@ var Main = (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 4, , 5]);
+                        _a.trys.push([0, 8, , 9]);
                         loadingView = new LoadingUI();
                         this.stage.addChild(loadingView);
                         return [4 /*yield*/, RES.loadConfig("resource/default.res.json", "resource/")];
@@ -143,16 +99,41 @@ var Main = (function (_super) {
                         return [4 /*yield*/, RES.loadGroup("preload", 0, loadingView)];
                     case 3:
                         _a.sent();
-                        this.stage.removeChild(loadingView);
-                        return [3 /*break*/, 5];
+                        return [4 /*yield*/, RES.getResByUrl("resource/assets/images/scorefont.fnt", this.onLoadFont, this, RES.ResourceItem.TYPE_FONT)];
                     case 4:
+                        _a.sent();
+                        return [4 /*yield*/, RES.getResByUrl("resource/assets/images/timefont.fnt", this.onLoadTFont, this, RES.ResourceItem.TYPE_FONT)];
+                    case 5:
+                        _a.sent();
+                        return [4 /*yield*/, RES.getResByUrl("resource/assets/images/timefonth.fnt", this.onLoadTWFont, this, RES.ResourceItem.TYPE_FONT)];
+                    case 6:
+                        _a.sent();
+                        return [4 /*yield*/, RES.getResByUrl("resource/assets/images/mainfont.fnt", this.onLoadMFont, this, RES.ResourceItem.TYPE_FONT)];
+                    case 7:
+                        _a.sent();
+                        this.stage.removeChild(loadingView);
+                        return [3 /*break*/, 9];
+                    case 8:
                         e_1 = _a.sent();
                         console.error(e_1);
-                        return [3 /*break*/, 5];
-                    case 5: return [2 /*return*/];
+                        return [3 /*break*/, 9];
+                    case 9: return [2 /*return*/];
                 }
             });
         });
+    };
+    //加载位图字体
+    Main.prototype.onLoadFont = function (f) {
+        font = f;
+    };
+    Main.prototype.onLoadTFont = function (f) {
+        timefont = f;
+    };
+    Main.prototype.onLoadTWFont = function (f) {
+        timefontwarn = f;
+    };
+    Main.prototype.onLoadMFont = function (f) {
+        mainfont = f;
     };
     Main.prototype.loadTheme = function () {
         var _this = this;
@@ -170,19 +151,43 @@ var Main = (function (_super) {
      * Create scene interface
      */
     Main.prototype.createGameScene = function () {
-        this.addChild(new gameScene());
-        // //以下联机功能
-        // this.addChild(this.scene);
-        // //初始化完成后的回调函数
-        // GameData.response.initResponse = this.initRespone;
-        // //注册成功的回调
-        // GameData.response.registerUserResponse = this.registerRespone;
-        // //登录回调
-        // GameData.response.loginResponse = this.loginResponse;
-        // //加入房间回调 包括随机和不随机
-        // GameData.response.joinRoomResponse = this.joinResponse;
-        // //初始化
-        // GameData.engine.init(GameData.response,GameData.channel,GameData.environment.dev,GameData.GameID,GameData.Appkey,GameData.GameVersion);
+        // 游戏界面
+        // this.addChild(new gameScene);
+        // this.createData();
+        //联网
+        this.matchvs = new MsEngine();
+        this.ms = new mainScene(this.matchvs);
+        this.mcs = new matchScene(this.matchvs);
+        // //主界面
+        this.addChild(this.ms);
+        this.ms.addEventListener("toMatch", this.switchScene, this);
+        //匹配界面
+        this.mcs.addEventListener("backMain", this.backScene, this);
+        this.mcs.addEventListener("toGame", this.createData, this);
+    };
+    Main.prototype.createData = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        this.gs = new gameScene();
+                        this.addChild(this.gs);
+                        return [4 /*yield*/, this.gs.createGame()];
+                    case 1:
+                        _a.sent();
+                        this.gs.init();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    Main.prototype.switchScene = function () {
+        // this.removeChild(this.ms);
+        this.addChild(this.mcs);
+    };
+    Main.prototype.backScene = function () {
+        this.ms.playTG();
+        this.removeChild(this.mcs);
     };
     return Main;
 }(eui.UILayer));
