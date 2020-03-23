@@ -6,18 +6,27 @@
 		"libs/modules/assetsmanager/assetsmanager.js",
 		"libs/modules/tween/tween.js",
 		"libs/modules/promise/promise.js",
+		"libs/modules/socket/socket.js",
+		"libs/modules/game/game.js",
 		"libs/matchvs/matchvs.js",
 		"libs/WXCloudApi/WXCloudApi.js",
 		"libs/egretmgobe/egretmgobe.js",
-		"libs/modules/socket/socket.js"
+		"libs/physics/physics.js"
 	],
 	"game": [
-		"bin-debug/AssetAdapter.js",
-		"bin-debug/GameData.js",
+		"bin-debug/component/Scene.js",
+		"bin-debug/component/Controler.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
+		"bin-debug/component/Camera.js",
+		"bin-debug/GameData.js",
+		"bin-debug/component/controlScene.js",
+		"bin-debug/component/Player.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/component/scene1.js",
+		"bin-debug/scene/gameScene.js",
 		"bin-debug/scene/startScene.js"
 	]
 }

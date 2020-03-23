@@ -1,3 +1,11 @@
+declare class CameraSkin extends eui.Skin{
+}
+declare class ControlerSkin extends eui.Skin{
+}
+declare class controlSceneSkin extends eui.Skin{
+}
+declare class scene1Skin extends eui.Skin{
+}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}
@@ -49,6 +57,8 @@ declare module skins{
 declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
+}
+declare class gameSceneSkin extends eui.Skin{
 }
 declare class startSceneSkin extends eui.Skin{
 }

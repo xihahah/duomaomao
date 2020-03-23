@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="scene1Skin" width="4000" height="1700" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16fc2447ed3" ></w:Config>
+	<e:Image id="bg1" source="bgimage_jpg" fillMode="clip" name="bgImage" width="4000" x="0" height="1700" y="0"/>
+	<e:Rect id="testBox" width="422" height="664.67" x="110.67" y="983.33" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x212121" fillAlpha="0.5" strokeAlpha="1"/>
+</e:Skin>

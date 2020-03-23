@@ -3,5 +3,45 @@
         "path": "scene\\startScene.ts",
         "class": "startScene",
         "parentPath": ""
+    },
+    "16e93f40e2f": {
+        "path": "scene\\gameScene.ts",
+        "class": "gameScene",
+        "parentPath": "",
+        "backgroundX": 0,
+        "backgroundY": 0,
+        "backgroundWidth": -1,
+        "backgroundHeight": -1,
+        "useBgImage": true,
+        "useBgColor": true,
+        "backgroundAlpha": 100
+    },
+    "16eab9de58e": {
+        "path": "component\\player.ts",
+        "class": "player",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": false
+    },
+    "16f7f407a9c": {
+        "path": "..\\resource\\component\\Camera.ts",
+        "class": "Camera",
+        "parentPath": ""
+    },
+    "16f7f644996": {
+        "path": "component\\Camera.ts",
+        "class": "Camera",
+        "parentPath": ""
+    },
+    "16fd0da3614": {
+        "path": "component\\Controler.ts",
+        "class": "Controler",
+        "parentPath": ""
+    },
+    "170053112df": {
+        "path": "component\\controlScene.ts",
+        "class": "controlScene",
+        "parentPath": ""
     }
 }

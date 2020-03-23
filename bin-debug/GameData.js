@@ -18,6 +18,9 @@ var GameData = (function () {
     GameData.engine = new MatchvsEngine();
     //接口调用返回对象
     GameData.response = new MatchvsResponse();
+    //舞台大小
+    GameData.stageWidth = 1136;
+    GameData.stageHeight = 640;
     return GameData;
 }());
 __reflect(GameData.prototype, "GameData");

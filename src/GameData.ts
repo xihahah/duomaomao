@@ -14,5 +14,7 @@ class GameData {
 	static engine:MatchvsEngine = new MatchvsEngine();
     //接口调用返回对象
     static response:MatchvsResponse = new MatchvsResponse();
-
+	//舞台大小
+	static stageWidth:number = 1136;
+	static stageHeight:number = 640;
 }

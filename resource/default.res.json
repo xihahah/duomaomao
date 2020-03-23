@@ -1,8 +1,12 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,testmap_jpg,left_png,left_hover_png,jump_hover_png,jump_png,right_png,right_hover_png,cat_mc_json,cat_tex_png,bgimage_jpg,sucai_json,default_json,y_png,y1_png,y2_png",
 			"name": "preload"
+		},
+		{
+			"keys": "",
+			"name": "sucai"
 		}
 	],
 	"resources": [
@@ -132,9 +136,85 @@
 			"name": "egret_icon_png"
 		},
 		{
-			"name": "description_json",
+			"url": "config/description.json",
 			"type": "json",
-			"url": "config/description.json"
+			"name": "description_json"
+		},
+		{
+			"url": "assets/images/testmap.jpg",
+			"type": "image",
+			"name": "testmap_jpg"
+		},
+		{
+			"url": "assets/images/left.png",
+			"type": "image",
+			"name": "left_png"
+		},
+		{
+			"url": "assets/images/left_hover.png",
+			"type": "image",
+			"name": "left_hover_png"
+		},
+		{
+			"url": "assets/images/jump_hover.png",
+			"type": "image",
+			"name": "jump_hover_png"
+		},
+		{
+			"url": "assets/images/jump.png",
+			"type": "image",
+			"name": "jump_png"
+		},
+		{
+			"url": "assets/images/right.png",
+			"type": "image",
+			"name": "right_png"
+		},
+		{
+			"url": "assets/images/right_hover.png",
+			"type": "image",
+			"name": "right_hover_png"
+		},
+		{
+			"url": "assets/player/cat_mc.json",
+			"type": "json",
+			"name": "cat_mc_json"
+		},
+		{
+			"url": "assets/player/cat_tex.png",
+			"type": "image",
+			"name": "cat_tex_png"
+		},
+		{
+			"url": "assets/images/背景图.jpg",
+			"type": "image",
+			"name": "bgimage_jpg"
+		},
+		{
+			"url": "assets/images/sucai.json",
+			"type": "sheet",
+			"name": "sucai_json",
+			"subkeys": "p_0000s_0000_刀,p_0000s_0001_碟,p_0000s_0002_勺子,p_0000s_0003_叉子,p_0000s_0004_锅2,p_0000s_0005_手套,p_0000s_0006_锅,p_0000s_0007_地毯,p_0000s_0008_闹钟,p_0000s_0009_蓝色笔,p_0000s_0010_绿色笔,p_0000s_0011_紫色熊熊,p_0000s_0012_蓝色薯片,p_0000s_0013_粉色薯片,p_0000s_0014_绿色薯片,p_0000s_0015_镜子,p_0000s_0016_红高跟,p_0000s_0017_黄高跟"
+		},
+		{
+			"name": "default_json",
+			"type": "json",
+			"url": "assets/p2/default.json"
+		},
+		{
+			"name": "y_png",
+			"type": "image",
+			"url": "assets/images/y.png"
+		},
+		{
+			"name": "y1_png",
+			"type": "image",
+			"url": "assets/images/y1.png"
+		},
+		{
+			"name": "y2_png",
+			"type": "image",
+			"url": "assets/images/y2.png"
 		}
 	]
 }

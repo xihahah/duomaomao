@@ -21,6 +21,12 @@
     {
       "name": "promise"
     },
+     {
+      "name":"socket"
+    },
+    {
+      "name":"game"
+    },
     {
       "name": "matchvs",
       "path": "./libs/matchvs"
@@ -33,8 +39,9 @@
       "name": "egretmgobe",
       "path": "./libs/egretmgobe"
     },
-    {
-      "name":"socket"
+   {
+      "name":"physics",
+      "path":"./libs/physics"
     }
   ]
 }

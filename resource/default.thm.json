@@ -13,10 +13,20 @@
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
-		"startScene": "resource/scene/startScene.exml"
+		"startScene": "resource/scene/startScene.exml",
+		"gameScene": "resource/scene/gameScene.exml",
+		"player": "resource/component/player.exml",
+		"Camera": "resource/component/Camera.exml",
+		"scene1": "resource/component/scene1.exml",
+		"Controler": "resource/component/Controler.exml",
+		"controlScene": "resource/component/controlScene.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
+		"resource/component/Camera.exml",
+		"resource/component/Controler.exml",
+		"resource/component/controlScene.exml",
+		"resource/component/scene1.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -30,6 +40,7 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
+		"resource/scene/gameScene.exml",
 		"resource/scene/startScene.exml"
 	],
 	"path": "resource/default.thm.json"
